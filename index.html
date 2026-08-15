@@ -1,0 +1,290 @@
+"""<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetMatch - Conectando huellitas con su hogar ideal</title>
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-paw logo-icon"></i>
+                <span>PetMatch</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#mascotas">Mascotas</a>
+                <a href="#proceso">Proceso</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <a href="#mascotas" class="btn btn-secondary nav-btn">Adoptar</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="badge">Asociación Sin Fines de Lucro</span>
+                <h1>Conectando huellitas con su hogar ideal</h1>
+                <p>Desde 2006, hemos unido a más de <strong>1,500 mascotas</strong> con familias amorosas. Nuestra misión es duplicar este número para el 2030 con tu apoyo.</p>
+                <div class="hero-buttons">
+                    <a href="#mascotas" class="btn btn-primary">Conoce a tu compañero</a>
+                    <a href="#proceso" class="btn btn-outline">¿Cómo funciona?</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=800" alt="Perro feliz en adopción" class="hero-img">
+                <div class="hero-card-float">
+                    <i class="fa-solid fa-heart float-icon"></i>
+                    <div>
+                        <strong>+1,500</strong>
+                        <span>Finales Felices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Section: Pets & Adoption Process -->
+    <section id="mascotas" class="main-content section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Mascotas Esperando un Hogar</h2>
+                <p>Conoce a nuestros rescatados y encuentra la compañía perfecta para tu vida.</p>
+            </div>
+
+            <div class="layout-grid">
+                <!-- Pets Catalog (Main Area) -->
+                <main class="pets-grid">
+                    
+                    <!-- Card 1 -->
+                    <article class="pet-card">
+                        <div class="pet-img-container">
+                            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=600" alt="Buddy">
+                            <span class="pet-tag">Perro</span>
+                        </div>
+                        <div class="pet-body">
+                            <div class="pet-header">
+                                <h3>Buddy</h3>
+                                <span class="pet-age">6 meses</span>
+                            </div>
+                            <div class="pet-traits">
+                                <span class="trait-badge">Juguetón</span>
+                                <span class="trait-badge">Sociable</span>
+                                <span class="trait-badge">Cariñoso</span>
+                            </div>
+                            <p class="pet-history">Fue rescatado en un parque cuando era muy pequeño. Es enérgico, le encanta correr tras la pelota y se lleva excelente con niños u otros perros.</p>
+                            <button class="btn btn-primary btn-block select-pet-btn" data-pet="Buddy">Quiero adoptar a Buddy</button>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="pet-card">
+                        <div class="pet-img-container">
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=600" alt="Luna">
+                            <span class="pet-tag">Gato</span>
+                        </div>
+                        <div class="pet-body">
+                            <div class="pet-header">
+                                <h3>Luna</h3>
+                                <span class="pet-age">3 años</span>
+                            </div>
+                            <div class="pet-traits">
+                                <span class="trait-badge">Tranquila</span>
+                                <span class="trait-badge">Afectuosa</span>
+                                <span class="trait-badge">Hogareña</span>
+                            </div>
+                            <p class="pet-history">Encontrada durante una noche de lluvia. Es una gatita de interior muy mimosa que adora dormir en el regazo y los ambientes tranquilos.</p>
+                            <button class="btn btn-primary btn-block select-pet-btn" data-pet="Luna">Quiero adoptar a Luna</button>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="pet-card">
+                        <div class="pet-img-container">
+                            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600" alt="Max">
+                            <span class="pet-tag">Perro</span>
+                        </div>
+                        <div class="pet-body">
+                            <div class="pet-header">
+                                <h3>Max</h3>
+                                <span class="pet-age">1 año</span>
+                            </div>
+                            <div class="pet-traits">
+                                <span class="trait-badge">Energético</span>
+                                <span class="trait-badge">Inteligente</span>
+                                <span class="trait-badge">Leal</span>
+                            </div>
+                            <p class="pet-history">Llegó a la asociación tras ser abandonado. Ama aprender trucos nuevos y realizar caminatas al aire libre. Busca una familia activa.</p>
+                            <button class="btn btn-primary btn-block select-pet-btn" data-pet="Max">Quiero adoptar a Max</button>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="pet-card">
+                        <div class="pet-img-container">
+                            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&q=80&w=600" alt="Mimi">
+                            <span class="pet-tag">Gato</span>
+                        </div>
+                        <div class="pet-body">
+                            <div class="pet-header">
+                                <h3>Mimi</h3>
+                                <span class="pet-age">2 años</span>
+                            </div>
+                            <div class="pet-traits">
+                                <span class="trait-badge">Curiosa</span>
+                                <span class="trait-badge">Dulce</span>
+                                <span class="trait-badge">Independiente</span>
+                            </div>
+                            <p class="pet-history">Rescatada de una colonia urbana. Mimi es suave, educada y le encanta observar por la ventana mientras disfruta del sol.</p>
+                            <button class="btn btn-primary btn-block select-pet-btn" data-pet="Mimi">Quiero adoptar a Mimi</button>
+                        </div>
+                    </article>
+
+                </main>
+
+                <!-- Aside Process -->
+                <aside id="proceso" class="process-aside">
+                    <div class="aside-card">
+                        <h3><i class="fa-solid fa-list-check"></i> Proceso de Adopción</h3>
+                        <p class="aside-intro">Un proceso simple y transparente para asegurar el bienestar de todos.</p>
+                        
+                        <ol class="process-list">
+                            <li>
+                                <div class="step-num">1</div>
+                                <div class="step-info">
+                                    <strong>Elige tu mascota</strong>
+                                    <p>Explora nuestras fichas y encuentra al animal que conecte contigo.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-num">2</div>
+                                <div class="step-info">
+                                    <strong>Completa la solicitud</strong>
+                                    <p>Llena el formulario abajo para conocer tus motivaciones y espacio.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-num">3</div>
+                                <div class="step-info">
+                                    <strong>Entrevista y visita</strong>
+                                    <p>Coordinamos una llamada y un encuentro para conocernos mejor.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-num">4</div>
+                                <div class="step-info">
+                                    <strong>¡Bienvenida a casa!</strong>
+                                    <p>Firmamos el compromiso de adopción y preparas el hogar.</p>
+                                </div>
+                            </li>
+                        </ol>
+                        
+                        <div class="aside-footer-note">
+                            <i class="fa-solid fa-circle-info"></i> Todos nuestros animales se entregan desparasitados, vacunados y esterilizados.
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Form Section -->
+    <section id="formulario" class="form-section section-padding">
+        <div class="container max-w-700">
+            <div class="section-title text-center">
+                <h2>Solicitud de Adopción</h2>
+                <p>Da el primer paso para darle un hogar lleno de amor a una mascota.</p>
+            </div>
+
+            <form id="adoption-form" class="adoption-form">
+                <div class="form-group">
+                    <label for="fullName">Nombre Completo *</label>
+                    <input type="text" id="fullName" required placeholder="Ej. Ana García">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="phone" required placeholder="+502 1234 5678">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="petSelect">Mascota de Interés *</label>
+                    <select id="petSelect" required>
+                        <option value="" disabled selected>Selecciona una mascota</option>
+                        <option value="Buddy">Buddy (Perro - 6 meses)</option>
+                        <option value="Luna">Luna (Gata - 3 años)</option>
+                        <option value="Max">Max (Perro - 1 año)</option>
+                        <option value="Mimi">Mimi (Gata - 2 años)</option>
+                        <option value="Otra">Aún no estoy seguro / Busco recomendación</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="aboutHome">Cuéntanos sobre tu hogar y estilo de vida *</label>
+                    <textarea id="aboutHome" rows="4" required placeholder="¿Tienes casa o departamento? ¿Hay otras mascotas o niños en casa?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar Solicitud de Adopción</button>
+            </form>
+            <div id="form-message" class="form-message hidden"></div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo text-white">
+                    <i class="fa-solid fa-paw logo-icon"></i>
+                    <span>PetMatch</span>
+                </a>
+                <p>Asociación sin fines de lucro fundada en 2006. Dedicados a la adopción responsable de mascotas.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contacto Directo</h4>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> contacto@petmatch.org</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +502 5555 0199</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Ciudad de Guatemala, Guatemala</li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <p>Acompáñanos en nuestras redes para ver más rescates y finales felices.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 PetMatch. Todos los derechos reservados. Conectando huellitas con su hogar ideal.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
